@@ -76,7 +76,7 @@ const sendRequest = async () => {
 
 
 const setDefaultResults = () => {
-  results.value = JSON.parse(localStorage.getItem('results')) || []
+  results.value = JSON.parse(localStorage.getItem('results') || '') || []
   results.value.forEach(item => categories.value.add(item.category))
 }
 

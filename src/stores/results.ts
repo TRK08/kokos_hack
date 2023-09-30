@@ -47,7 +47,7 @@ export const useResultsStore = defineStore('results',  {
     },
     getters: {
         resultsByCategory: (state: IState) => {
-            return (category) => {
+            return (category: string) => {
                 if (category === 'Все') {
                     return state.results
                 } else {
