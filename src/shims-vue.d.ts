@@ -1,0 +1,13 @@
+declare module "*.vue" {
+    import type { DefineComponent } from "vue";
+    const component: DefineComponent<{}, {}, any>;
+    export default component;
+}
+
+
+
+export interface IResult {
+    url: string
+    category: string,
+    theme: string,
+}
